@@ -73,6 +73,7 @@ export function initializer(keycloak: KeycloakService): () => Promise<boolean> {
     return () => keycloak.init(options);
 }
 ```
+### Note - Please make sure to enable *Proof Key for Code Exchange Code Challenge Method-S256* 
 ### STEP 6 - Create Auth Service in Auth Module to handle authentication stuff
 
 `ng generate service auth/service/Auth`
